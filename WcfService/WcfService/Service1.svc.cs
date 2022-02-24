@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentManage.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
@@ -14,19 +15,35 @@ namespace WcfService
     // NOTE: In order to launch WCF Test Client for testing this service, please select Service1.svc or Service1.svc.cs at the Solution Explorer and start debugging.
     public class Service1 : IService1
     {
-        public List<Employee> GetAll()
+        MyDBContext myDBContext = new MyDBContext();
+        public List<Employee> GetAll(string Department)
         {
-            throw new NotImplementedException();
+            if (!String.IsNullOrEmpty(Department))
+            {
+                return myDBContext.employees.Where(m => m.Department.Contains(Department)).ToList();
+            } 
+              return myDBContext.employees.ToList();
         }
 
-        public Employee Save(EmployeeDto employeeDto)
+        public bool Save(EmployeeDto employeeDto)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Employee employee = new Employee()
+                {
+                    EmployeeName = employeeDto.EmployeeName,
+                    Department = employeeDto.Department,
+                    Salary = employeeDto.Salary
+                };
+                myDBContext.employees.Add(employee);
+                myDBContext.SaveChanges();
+            }catch(Exception e)
+            {
+                return false;
+            }
+            return true;
         }
 
-        public string Search(int Department)
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

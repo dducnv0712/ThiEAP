@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Client.ServiceReference1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,23 +9,23 @@ namespace Client.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        static ServiceReference1.Service1Client serviceClient = new ServiceReference1.Service1Client();
+        public ActionResult Index(string Department)
+        {
+           var res = serviceClient.GetAll(Department);
+            return View(res.ToList());
+        }
+        public ActionResult Create()
         {
             return View();
         }
-
-        public ActionResult About()
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(EmployeeDto employeeDto)
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            serviceClient.Save(employeeDto);
+            
+            return RedirectToAction("Index");
         }
     }
 }

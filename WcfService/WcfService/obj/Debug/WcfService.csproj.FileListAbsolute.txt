@@ -10,3 +10,6 @@ E:\C#_learning\Thi-EAP\WcfService\WcfService\bin\EntityFramework.SqlServer.dll
 E:\C#_learning\Thi-EAP\WcfService\WcfService\bin\EntityFramework.xml
 E:\C#_learning\Thi-EAP\WcfService\WcfService\bin\EntityFramework.SqlServer.xml
 E:\C#_learning\Thi-EAP\WcfService\WcfService\obj\Debug\WcfService.csproj.CopyComplete
+E:\C#_learning\Thi-EAP\WcfService\WcfService\obj\Debug\WcfService.Migrations.InitDatabase.resources
+E:\C#_learning\Thi-EAP\WcfService\WcfService\obj\Debug\WcfService.csproj.GenerateResource.cache
+E:\C#_learning\Thi-EAP\WcfService\WcfService\obj\Debug\WcfService.Migrations.ChangeEntity.resources

@@ -16,10 +16,8 @@ namespace WcfService
     {
 
         [OperationContract]
-        List<Employee> GetAll();
+        List<Employee> GetAll(string Department);
         [OperationContract]
-        Employee Save(EmployeeDto employeeDto);
-        [OperationContract]
-        string Search(int Department);
+        bool Save(EmployeeDto employeeDto);
     }
 }
