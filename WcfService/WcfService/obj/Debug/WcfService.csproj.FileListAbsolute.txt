@@ -1,0 +1,12 @@
+E:\C#_learning\Thi-EAP\WcfService\WcfService\bin\WcfService.dll.config
+E:\C#_learning\Thi-EAP\WcfService\WcfService\bin\WcfService.dll
+E:\C#_learning\Thi-EAP\WcfService\WcfService\bin\WcfService.pdb
+E:\C#_learning\Thi-EAP\WcfService\WcfService\obj\Debug\WcfService.csproj.AssemblyReference.cache
+E:\C#_learning\Thi-EAP\WcfService\WcfService\obj\Debug\WcfService.csproj.CoreCompileInputs.cache
+E:\C#_learning\Thi-EAP\WcfService\WcfService\obj\Debug\WcfService.dll
+E:\C#_learning\Thi-EAP\WcfService\WcfService\obj\Debug\WcfService.pdb
+E:\C#_learning\Thi-EAP\WcfService\WcfService\bin\EntityFramework.dll
+E:\C#_learning\Thi-EAP\WcfService\WcfService\bin\EntityFramework.SqlServer.dll
+E:\C#_learning\Thi-EAP\WcfService\WcfService\bin\EntityFramework.xml
+E:\C#_learning\Thi-EAP\WcfService\WcfService\bin\EntityFramework.SqlServer.xml
+E:\C#_learning\Thi-EAP\WcfService\WcfService\obj\Debug\WcfService.csproj.CopyComplete
